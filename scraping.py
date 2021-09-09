@@ -107,6 +107,7 @@ def mars_facts():
     # Convert dataframe into HTML format, add bootstrap
     return df.to_html(classes="table table-striped")
 
+#For Challenge funtion to scrape hempishere data
 def hemisphere_image(browser):
     
     # Visit the URL 
@@ -154,9 +155,6 @@ def hemisphere_image(browser):
 
     except BaseException:
         return None
-    
-    # Return the list that holds the dictionary of each image url and title
-    return hemisphere_image_urls    
 
 if __name__ == "__main__":
     # If running as script, print scraped data
